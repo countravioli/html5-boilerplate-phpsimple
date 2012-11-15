@@ -1,3 +1,10 @@
+# [HTML5 Boilerplate PHP Simple])http://navarolil.com)
+My modifications built around HTML5 Boiler plate. See the rest of the README below the line that reads "END PHP SIMPLE."
+
+* Breaks basic index file into a templating system.
+* Includes to htaccess magic for rewriting .php extensions. Major purpose of this is to have <yoursite>/foo execute the <yoursite>/foo.php file. I've always prefered this type of plink structure.
+
+-------------------- END PHP SIMPLE ----------------------
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,

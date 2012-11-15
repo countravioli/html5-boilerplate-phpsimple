@@ -538,3 +538,16 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 <IfModule mod_php5.c>
   php_value session.cookie_httponly true
 </IfModule>
+
+# --------- #
+# PHPSimple #
+# --------- #
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteCond %{REQUEST_FILENAME}\.php -f
+	RewriteRule ^(.+)$ $1.php
+</IfModule>
